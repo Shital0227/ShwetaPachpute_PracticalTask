@@ -73,12 +73,17 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="max-w-[1120px] mx-auto px-6 py-6 border-t border-[#FFD5CC] flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-xs text-gray-600 flex items-center gap-2 flex-wrap justify-center md:justify-start">
-          © 2026 AAVORide Premium Mobility. All rights reserved. Driven by Excellence.
-          <span className="bg-[#FF3E1D] text-white text-[10px] px-2.5 py-0.5 rounded-full font-bold">
-            ● AAVORide
-          </span>
-        </p>
+        <div className="flex items-center gap-3">
+          <p className="text-xs text-gray-600">
+            © 2026 AAVORide Premium Mobility. All rights reserved. Driven by Excellence.
+          </p>
+          <div className="flex items-center gap-2">
+            <div className="w-5 h-5 rounded-full bg-[#FF3E1D] flex items-center justify-center">
+              <span className="text-white text-[8px] font-bold">●</span>
+            </div>
+            <span className="text-xs font-bold text-gray-800">AAVORide</span>
+          </div>
+        </div>
         <div className="flex gap-5 flex-wrap justify-center">
           {["Privacy Policy", "Terms of Service", "Sitemap"].map((l) => (
             <Link
